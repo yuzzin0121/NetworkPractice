@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPk-yc-Ppz">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lotto View Controller-->
+        <!--Lotto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LottoViewController" customModule="NetworkPractice" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raN-Da-KYl">
-                                <rect key="frame" x="0.0" y="626" width="393" height="180"/>
+                                <rect key="frame" x="0.0" y="577" width="393" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="UP8-ae-1aS"/>
                                 </constraints>
@@ -147,6 +147,7 @@
                             <outletCollection property="gestureRecognizers" destination="UfX-BW-WKy" appends="YES" id="UHq-eX-6Px"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Lotto" image="1.circle.ar" catalog="system" id="Uee-vo-HIy"/>
                     <connections>
                         <outlet property="bonusNoLabel" destination="URc-o0-miQ" id="kta-wm-Mmk"/>
                         <outlet property="dateLabel" destination="cUb-bP-0HL" id="Y8d-YM-I5j"/>
@@ -167,10 +168,61 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-381" y="744"/>
+        </scene>
+        <!--Beer-->
+        <scene sceneID="B4h-nP-7MB">
+            <objects>
+                <viewController id="dBi-fm-ScR" customClass="BeerViewController" customModule="NetworkPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Mj-yy-Mm8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OO4-Jv-kAO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m0N-H6-XdH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OO4-Jv-kAO" firstAttribute="top" secondItem="m0N-H6-XdH" secondAttribute="top" id="Itl-Fb-Zga"/>
+                            <constraint firstItem="OO4-Jv-kAO" firstAttribute="leading" secondItem="m0N-H6-XdH" secondAttribute="leading" id="cTA-QQ-ThE"/>
+                            <constraint firstItem="m0N-H6-XdH" firstAttribute="trailing" secondItem="OO4-Jv-kAO" secondAttribute="trailing" id="rcF-z1-XUI"/>
+                            <constraint firstItem="m0N-H6-XdH" firstAttribute="bottom" secondItem="OO4-Jv-kAO" secondAttribute="bottom" id="ysF-sy-Ioh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Beer" image="drop" catalog="system" id="EXb-cY-YSY"/>
+                    <connections>
+                        <outlet property="beerTableView" destination="OO4-Jv-kAO" id="Gsz-ve-pKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lxj-Kt-1mp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="744"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="naP-0E-Qzj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dPk-yc-Ppz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1kr-fF-btx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zRO-dp-b1Y"/>
+                        <segue destination="dBi-fm-ScR" kind="relationship" relationship="viewControllers" id="iTI-2c-xbY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dh1-h3-u5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1.circle.ar" catalog="system" width="128" height="123"/>
+        <image name="drop" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

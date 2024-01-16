@@ -18,6 +18,15 @@
 		61F1A3412B5670C8002AAACC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 61F1A3402B5670C8002AAACC /* Alamofire */; };
 		61F1A3442B567265002AAACC /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3432B567265002AAACC /* UILabel+Extension.swift */; };
 		61F1A3482B567878002AAACC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3472B567878002AAACC /* String+Extension.swift */; };
+		61F1A34A2B567DD6002AAACC /* BeerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3492B567DD6002AAACC /* BeerAPIManager.swift */; };
+		61F1A34C2B567E17002AAACC /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A34B2B567E17002AAACC /* Beer.swift */; };
+		61F1A34F2B568228002AAACC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 61F1A34E2B568228002AAACC /* Kingfisher */; };
+		61F1A3512B568361002AAACC /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3502B568361002AAACC /* BeerViewController.swift */; };
+		61F1A3542B56838C002AAACC /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3532B56838C002AAACC /* Protocol.swift */; };
+		61F1A3582B568425002AAACC /* BeerInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3562B568425002AAACC /* BeerInfoCollectionViewCell.swift */; };
+		61F1A3592B568425002AAACC /* BeerInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61F1A3572B568425002AAACC /* BeerInfoCollectionViewCell.xib */; };
+		61F1A35C2B5686B5002AAACC /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A35A2B5686B5002AAACC /* BeerTableViewCell.swift */; };
+		61F1A35D2B5686B5002AAACC /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61F1A35B2B5686B5002AAACC /* BeerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +42,14 @@
 		61F1A33D2B5670B0002AAACC /* LottoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPIManager.swift; sourceTree = "<group>"; };
 		61F1A3432B567265002AAACC /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		61F1A3472B567878002AAACC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		61F1A3492B567DD6002AAACC /* BeerAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPIManager.swift; sourceTree = "<group>"; };
+		61F1A34B2B567E17002AAACC /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		61F1A3502B568361002AAACC /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		61F1A3532B56838C002AAACC /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		61F1A3562B568425002AAACC /* BeerInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		61F1A3572B568425002AAACC /* BeerInfoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerInfoCollectionViewCell.xib; sourceTree = "<group>"; };
+		61F1A35A2B5686B5002AAACC /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		61F1A35B2B5686B5002AAACC /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F1A34F2B568228002AAACC /* Kingfisher in Frameworks */,
 				61F1A3412B5670C8002AAACC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,12 +84,15 @@
 		61F1A3242B5663E4002AAACC /* NetworkPractice */ = {
 			isa = PBXGroup;
 			children = (
+				61F1A3522B56837E002AAACC /* Protocol */,
 				61F1A3422B56725A002AAACC /* Extension */,
 				61F1A33C2B56709B002AAACC /* Network */,
 				61F1A3392B567086002AAACC /* Model */,
+				61F1A3552B56840A002AAACC /* Cell */,
 				61F1A3252B5663E4002AAACC /* AppDelegate.swift */,
 				61F1A3272B5663E4002AAACC /* SceneDelegate.swift */,
 				61F1A3292B5663E4002AAACC /* LottoViewController.swift */,
+				61F1A3502B568361002AAACC /* BeerViewController.swift */,
 				61F1A32B2B5663E4002AAACC /* Main.storyboard */,
 				61F1A32E2B5663E7002AAACC /* Assets.xcassets */,
 				61F1A3302B5663E7002AAACC /* LaunchScreen.storyboard */,
@@ -84,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				61F1A33A2B567091002AAACC /* Lotto.swift */,
+				61F1A34B2B567E17002AAACC /* Beer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				61F1A33D2B5670B0002AAACC /* LottoAPIManager.swift */,
+				61F1A3492B567DD6002AAACC /* BeerAPIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -103,6 +126,25 @@
 				61F1A3472B567878002AAACC /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		61F1A3522B56837E002AAACC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				61F1A3532B56838C002AAACC /* Protocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		61F1A3552B56840A002AAACC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				61F1A3562B568425002AAACC /* BeerInfoCollectionViewCell.swift */,
+				61F1A3572B568425002AAACC /* BeerInfoCollectionViewCell.xib */,
+				61F1A35A2B5686B5002AAACC /* BeerTableViewCell.swift */,
+				61F1A35B2B5686B5002AAACC /* BeerTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +165,7 @@
 			name = NetworkPractice;
 			packageProductDependencies = (
 				61F1A3402B5670C8002AAACC /* Alamofire */,
+				61F1A34E2B568228002AAACC /* Kingfisher */,
 			);
 			productName = NetworkPractice;
 			productReference = 61F1A3222B5663E4002AAACC /* NetworkPractice.app */;
@@ -154,6 +197,7 @@
 			mainGroup = 61F1A3192B5663E4002AAACC;
 			packageReferences = (
 				61F1A33F2B5670C8002AAACC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				61F1A34D2B568228002AAACC /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 61F1A3232B5663E4002AAACC /* Products */;
 			projectDirPath = "";
@@ -169,6 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F1A3592B568425002AAACC /* BeerInfoCollectionViewCell.xib in Resources */,
+				61F1A35D2B5686B5002AAACC /* BeerTableViewCell.xib in Resources */,
 				61F1A3322B5663E7002AAACC /* LaunchScreen.storyboard in Resources */,
 				61F1A32F2B5663E7002AAACC /* Assets.xcassets in Resources */,
 				61F1A32D2B5663E4002AAACC /* Main.storyboard in Resources */,
@@ -182,10 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F1A3512B568361002AAACC /* BeerViewController.swift in Sources */,
 				61F1A33B2B567091002AAACC /* Lotto.swift in Sources */,
+				61F1A34C2B567E17002AAACC /* Beer.swift in Sources */,
 				61F1A3482B567878002AAACC /* String+Extension.swift in Sources */,
+				61F1A3582B568425002AAACC /* BeerInfoCollectionViewCell.swift in Sources */,
+				61F1A34A2B567DD6002AAACC /* BeerAPIManager.swift in Sources */,
 				61F1A33E2B5670B0002AAACC /* LottoAPIManager.swift in Sources */,
+				61F1A3542B56838C002AAACC /* Protocol.swift in Sources */,
 				61F1A3442B567265002AAACC /* UILabel+Extension.swift in Sources */,
+				61F1A35C2B5686B5002AAACC /* BeerTableViewCell.swift in Sources */,
 				61F1A32A2B5663E4002AAACC /* LottoViewController.swift in Sources */,
 				61F1A3262B5663E4002AAACC /* AppDelegate.swift in Sources */,
 				61F1A3282B5663E4002AAACC /* SceneDelegate.swift in Sources */,
@@ -421,6 +473,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		61F1A34D2B568228002AAACC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -428,6 +488,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 61F1A33F2B5670C8002AAACC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		61F1A34E2B568228002AAACC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61F1A34D2B568228002AAACC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
