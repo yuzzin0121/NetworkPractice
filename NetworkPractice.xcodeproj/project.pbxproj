@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		615B66562B579A9C00C38A98 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 615B66552B579A9C00C38A98 /* .gitignore */; };
+		615B66582B579AB000C38A98 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B66572B579AB000C38A98 /* APIKey.swift */; };
+		615B665C2B579BDA00C38A98 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B665B2B579BDA00C38A98 /* BookViewController.swift */; };
+		615B665E2B579C2600C38A98 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B665D2B579C2600C38A98 /* Book.swift */; };
+		615B66602B579EA700C38A98 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B665F2B579EA700C38A98 /* TranslateViewController.swift */; };
+		615B66622B57A55900C38A98 /* Papago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B66612B57A55900C38A98 /* Papago.swift */; };
+		615B666B2B57AF2800C38A98 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B666A2B57AF2800C38A98 /* LanguageViewController.swift */; };
+		61E2C81D2B57B56700988F7F /* LangTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E2C81B2B57B56700988F7F /* LangTableViewCell.swift */; };
+		61E2C81E2B57B56700988F7F /* LangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E2C81C2B57B56700988F7F /* LangTableViewCell.xib */; };
 		61F1A3262B5663E4002AAACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3252B5663E4002AAACC /* AppDelegate.swift */; };
 		61F1A3282B5663E4002AAACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3272B5663E4002AAACC /* SceneDelegate.swift */; };
 		61F1A32A2B5663E4002AAACC /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3292B5663E4002AAACC /* LottoViewController.swift */; };
@@ -30,6 +39,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615B66552B579A9C00C38A98 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		615B66572B579AB000C38A98 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		615B665B2B579BDA00C38A98 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		615B665D2B579C2600C38A98 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		615B665F2B579EA700C38A98 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		615B66612B57A55900C38A98 /* Papago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Papago.swift; sourceTree = "<group>"; };
+		615B666A2B57AF2800C38A98 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		61E2C81B2B57B56700988F7F /* LangTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangTableViewCell.swift; sourceTree = "<group>"; };
+		61E2C81C2B57B56700988F7F /* LangTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LangTableViewCell.xib; sourceTree = "<group>"; };
 		61F1A3222B5663E4002AAACC /* NetworkPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F1A3252B5663E4002AAACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F1A3272B5663E4002AAACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,9 +83,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		615B66592B579BAE00C38A98 /* Beer */ = {
+			isa = PBXGroup;
+			children = (
+				61F1A3562B568425002AAACC /* BeerInfoCollectionViewCell.swift */,
+				61F1A3572B568425002AAACC /* BeerInfoCollectionViewCell.xib */,
+				61F1A35A2B5686B5002AAACC /* BeerTableViewCell.swift */,
+				61F1A35B2B5686B5002AAACC /* BeerTableViewCell.xib */,
+			);
+			path = Beer;
+			sourceTree = "<group>";
+		};
+		615B665A2B579BBD00C38A98 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		61E2C81A2B57B55200988F7F /* Papago */ = {
+			isa = PBXGroup;
+			children = (
+				61E2C81B2B57B56700988F7F /* LangTableViewCell.swift */,
+				61E2C81C2B57B56700988F7F /* LangTableViewCell.xib */,
+			);
+			path = Papago;
+			sourceTree = "<group>";
+		};
 		61F1A3192B5663E4002AAACC = {
 			isa = PBXGroup;
 			children = (
+				615B66552B579A9C00C38A98 /* .gitignore */,
 				61F1A3242B5663E4002AAACC /* NetworkPractice */,
 				61F1A3232B5663E4002AAACC /* Products */,
 			);
@@ -84,6 +130,7 @@
 		61F1A3242B5663E4002AAACC /* NetworkPractice */ = {
 			isa = PBXGroup;
 			children = (
+				615B66572B579AB000C38A98 /* APIKey.swift */,
 				61F1A3522B56837E002AAACC /* Protocol */,
 				61F1A3422B56725A002AAACC /* Extension */,
 				61F1A33C2B56709B002AAACC /* Network */,
@@ -91,12 +138,15 @@
 				61F1A3552B56840A002AAACC /* Cell */,
 				61F1A3252B5663E4002AAACC /* AppDelegate.swift */,
 				61F1A3272B5663E4002AAACC /* SceneDelegate.swift */,
+				615B665F2B579EA700C38A98 /* TranslateViewController.swift */,
+				615B665B2B579BDA00C38A98 /* BookViewController.swift */,
 				61F1A3292B5663E4002AAACC /* LottoViewController.swift */,
 				61F1A3502B568361002AAACC /* BeerViewController.swift */,
 				61F1A32B2B5663E4002AAACC /* Main.storyboard */,
 				61F1A32E2B5663E7002AAACC /* Assets.xcassets */,
 				61F1A3302B5663E7002AAACC /* LaunchScreen.storyboard */,
 				61F1A3332B5663E7002AAACC /* Info.plist */,
+				615B666A2B57AF2800C38A98 /* LanguageViewController.swift */,
 			);
 			path = NetworkPractice;
 			sourceTree = "<group>";
@@ -106,6 +156,8 @@
 			children = (
 				61F1A33A2B567091002AAACC /* Lotto.swift */,
 				61F1A34B2B567E17002AAACC /* Beer.swift */,
+				615B665D2B579C2600C38A98 /* Book.swift */,
+				615B66612B57A55900C38A98 /* Papago.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,10 +191,9 @@
 		61F1A3552B56840A002AAACC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				61F1A3562B568425002AAACC /* BeerInfoCollectionViewCell.swift */,
-				61F1A3572B568425002AAACC /* BeerInfoCollectionViewCell.xib */,
-				61F1A35A2B5686B5002AAACC /* BeerTableViewCell.swift */,
-				61F1A35B2B5686B5002AAACC /* BeerTableViewCell.xib */,
+				61E2C81A2B57B55200988F7F /* Papago */,
+				615B665A2B579BBD00C38A98 /* Book */,
+				615B66592B579BAE00C38A98 /* Beer */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -217,6 +268,8 @@
 				61F1A35D2B5686B5002AAACC /* BeerTableViewCell.xib in Resources */,
 				61F1A3322B5663E7002AAACC /* LaunchScreen.storyboard in Resources */,
 				61F1A32F2B5663E7002AAACC /* Assets.xcassets in Resources */,
+				615B66562B579A9C00C38A98 /* .gitignore in Resources */,
+				61E2C81E2B57B56700988F7F /* LangTableViewCell.xib in Resources */,
 				61F1A32D2B5663E4002AAACC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615B665E2B579C2600C38A98 /* Book.swift in Sources */,
 				61F1A3512B568361002AAACC /* BeerViewController.swift in Sources */,
 				61F1A33B2B567091002AAACC /* Lotto.swift in Sources */,
 				61F1A34C2B567E17002AAACC /* Beer.swift in Sources */,
@@ -236,10 +290,16 @@
 				61F1A34A2B567DD6002AAACC /* BeerAPIManager.swift in Sources */,
 				61F1A33E2B5670B0002AAACC /* LottoAPIManager.swift in Sources */,
 				61F1A3542B56838C002AAACC /* Protocol.swift in Sources */,
+				615B66622B57A55900C38A98 /* Papago.swift in Sources */,
+				615B66582B579AB000C38A98 /* APIKey.swift in Sources */,
+				61E2C81D2B57B56700988F7F /* LangTableViewCell.swift in Sources */,
 				61F1A3442B567265002AAACC /* UILabel+Extension.swift in Sources */,
+				615B66602B579EA700C38A98 /* TranslateViewController.swift in Sources */,
 				61F1A35C2B5686B5002AAACC /* BeerTableViewCell.swift in Sources */,
 				61F1A32A2B5663E4002AAACC /* LottoViewController.swift in Sources */,
+				615B665C2B579BDA00C38A98 /* BookViewController.swift in Sources */,
 				61F1A3262B5663E4002AAACC /* AppDelegate.swift in Sources */,
+				615B666B2B57AF2800C38A98 /* LanguageViewController.swift in Sources */,
 				61F1A3282B5663E4002AAACC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

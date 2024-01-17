@@ -23,3 +23,11 @@ extension UITableViewCell: ReuseProtocol {
         }
     }
 }
+
+extension UIViewController {
+    static var identifier: String {
+        get {
+            String(describing: self)
+        }
+    }
+}
