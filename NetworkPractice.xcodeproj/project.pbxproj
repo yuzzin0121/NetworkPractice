@@ -14,8 +14,11 @@
 		615B66602B579EA700C38A98 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B665F2B579EA700C38A98 /* TranslateViewController.swift */; };
 		615B66622B57A55900C38A98 /* Papago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B66612B57A55900C38A98 /* Papago.swift */; };
 		615B666B2B57AF2800C38A98 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B666A2B57AF2800C38A98 /* LanguageViewController.swift */; };
+		61AD50A62B57BE0F00314673 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD50A42B57BE0F00314673 /* BookCollectionViewCell.swift */; };
+		61AD50A72B57BE0F00314673 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61AD50A52B57BE0F00314673 /* BookCollectionViewCell.xib */; };
 		61E2C81D2B57B56700988F7F /* LangTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E2C81B2B57B56700988F7F /* LangTableViewCell.swift */; };
 		61E2C81E2B57B56700988F7F /* LangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E2C81C2B57B56700988F7F /* LangTableViewCell.xib */; };
+		61E2C8202B57BD1700988F7F /* BookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E2C81F2B57BD1700988F7F /* BookAPIManager.swift */; };
 		61F1A3262B5663E4002AAACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3252B5663E4002AAACC /* AppDelegate.swift */; };
 		61F1A3282B5663E4002AAACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3272B5663E4002AAACC /* SceneDelegate.swift */; };
 		61F1A32A2B5663E4002AAACC /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1A3292B5663E4002AAACC /* LottoViewController.swift */; };
@@ -46,8 +49,11 @@
 		615B665F2B579EA700C38A98 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		615B66612B57A55900C38A98 /* Papago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Papago.swift; sourceTree = "<group>"; };
 		615B666A2B57AF2800C38A98 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		61AD50A42B57BE0F00314673 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		61AD50A52B57BE0F00314673 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
 		61E2C81B2B57B56700988F7F /* LangTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangTableViewCell.swift; sourceTree = "<group>"; };
 		61E2C81C2B57B56700988F7F /* LangTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LangTableViewCell.xib; sourceTree = "<group>"; };
+		61E2C81F2B57BD1700988F7F /* BookAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPIManager.swift; sourceTree = "<group>"; };
 		61F1A3222B5663E4002AAACC /* NetworkPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F1A3252B5663E4002AAACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61F1A3272B5663E4002AAACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 		615B665A2B579BBD00C38A98 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				61AD50A42B57BE0F00314673 /* BookCollectionViewCell.swift */,
+				61AD50A52B57BE0F00314673 /* BookCollectionViewCell.xib */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			children = (
 				61F1A33D2B5670B0002AAACC /* LottoAPIManager.swift */,
 				61F1A3492B567DD6002AAACC /* BeerAPIManager.swift */,
+				61E2C81F2B57BD1700988F7F /* BookAPIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				61F1A3322B5663E7002AAACC /* LaunchScreen.storyboard in Resources */,
 				61F1A32F2B5663E7002AAACC /* Assets.xcassets in Resources */,
 				615B66562B579A9C00C38A98 /* .gitignore in Resources */,
+				61AD50A72B57BE0F00314673 /* BookCollectionViewCell.xib in Resources */,
 				61E2C81E2B57B56700988F7F /* LangTableViewCell.xib in Resources */,
 				61F1A32D2B5663E4002AAACC /* Main.storyboard in Resources */,
 			);
@@ -284,6 +294,7 @@
 				615B665E2B579C2600C38A98 /* Book.swift in Sources */,
 				61F1A3512B568361002AAACC /* BeerViewController.swift in Sources */,
 				61F1A33B2B567091002AAACC /* Lotto.swift in Sources */,
+				61AD50A62B57BE0F00314673 /* BookCollectionViewCell.swift in Sources */,
 				61F1A34C2B567E17002AAACC /* Beer.swift in Sources */,
 				61F1A3482B567878002AAACC /* String+Extension.swift in Sources */,
 				61F1A3582B568425002AAACC /* BeerInfoCollectionViewCell.swift in Sources */,
@@ -299,6 +310,7 @@
 				61F1A32A2B5663E4002AAACC /* LottoViewController.swift in Sources */,
 				615B665C2B579BDA00C38A98 /* BookViewController.swift in Sources */,
 				61F1A3262B5663E4002AAACC /* AppDelegate.swift in Sources */,
+				61E2C8202B57BD1700988F7F /* BookAPIManager.swift in Sources */,
 				615B666B2B57AF2800C38A98 /* LanguageViewController.swift in Sources */,
 				61F1A3282B5663E4002AAACC /* SceneDelegate.swift in Sources */,
 			);

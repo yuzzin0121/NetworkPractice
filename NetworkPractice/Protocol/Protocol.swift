@@ -24,7 +24,15 @@ extension UITableViewCell: ReuseProtocol {
     }
 }
 
-extension UIViewController {
+extension UICollectionViewCell: ReuseProtocol {
+    static var identifier: String {
+        get {
+            String(describing: self)
+        }
+    }
+}
+
+extension UIViewController: ReuseProtocol {
     static var identifier: String {
         get {
             String(describing: self)

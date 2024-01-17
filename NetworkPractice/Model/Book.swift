@@ -10,7 +10,6 @@ import Foundation
 // MARK: - Book
 struct Book: Codable {
     let documents: [Document]
-    let meta: Meta
 }
 
 // MARK: - Document
@@ -21,7 +20,7 @@ struct Document: Codable {
     let publisher: String   // 도서 출판사
     let salePrice: Int  // 도서 판매가
     let status: String  // 도서 판매 상태 정보 (정상, 품절, 절판 등)
-    let thumbnail: String  // 도서 표지 미리보기 URL
+    let thumbnail: String?  // 도서 표지 미리보기 URL
     let title: String    // 도서 제목
     let url: String
 
